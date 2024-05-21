@@ -311,21 +311,26 @@ window.homerDrawer = {
 			//if (window.actor != null && !window.actor._isNarrator)
 			//	window.avatar = window.Avataaars.create(actor._avatar._options);
 			//console.debug("window.actor._id = " + window.actor._uid);
-			if (window.actor._uid == "CSABA_MAGA") {
-				window.avatar = '<img src="img/avatar_maga.jpg" alt="Maga Avatar"></img>'
+			if (window.actor._uid == "MATT") {
+				window.avatar = '<img src="img/Matt_portrait-export" alt="Maga Avatar"></img>'
 			}
-			if (window.actor._uid == "CONSIGLIERE_REVAN") {
-				window.avatar = '<img src="img/avatar_consigliere.jpg" alt="Consigliere Avatar"></img>'
+			if (window.actor._uid == "MATT_S_MOM") {
+				window.avatar = '<img src="img/mother_portrait-export" alt="Consigliere Avatar"></img>'
 			}
-			if (window.actor._uid == "CITTADINI") {
-				window.avatar = '<img src="img/avatar_cittadini.jpg" alt="Cittadini Avatar"></img>'
+			if (window.actor._uid == "KIMBERLY") {
+				window.avatar = '<img src="img/Kimberly_portrait-export" alt="Cittadini Avatar"></img>'
 			}
-
-			let actorName = actor._name;
-			if (actorName == "ENCICLOPEDIA") {
-				$("#container").addClass("special-story-container");
-			} else {
-				$("#container").removeClass("special-story-container");
+			if (window.actor._uid == "RANDOM_GUY__1") {
+				window.avatar = '<img src="img/random_guy_1-export" alt="Cittadini Avatar"></img>'
+			}
+			if (window.actor._uid == "RANDOM_GUY__2") {
+				window.avatar = '<img src="img/random_guy_2-export" alt="Cittadini Avatar"></img>'
+			}
+			if (window.actor._uid == "RANDOM_GIRL__1") {
+				window.avatar = '<img src="img/random_girl_1-export" alt="Cittadini Avatar"></img>'
+			}
+			if (window.actor._uid == "RANDOM_GIRL__2") {
+				window.avatar = '<img src="img/random_girl_2-export" alt="Cittadini Avatar"></img>'
 			}
 			
 			switch (node._type) {	
@@ -339,7 +344,7 @@ window.homerDrawer = {
 					homerDrawer.placeholders.actor_name_placeholder.html(actorName);
 					homerDrawer.placeholders.text_placeholder.html(Homer.getParsedText());
 					
-					let next = $("<button>").addClass("btn btn-primary choice-button").html("AVANTI");
+					let next = $("<button>").addClass("btn btn-primary choice-button").html("NEXT");
 					
 					next.on("click", () => {
 						homerDrawer.drawNext();
