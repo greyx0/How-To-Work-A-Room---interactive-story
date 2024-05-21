@@ -26,6 +26,8 @@ class HomerActors {
 }
 
 class HomerMeta {
+      static MUSIC = {
+      };
       static FLOW_STATE = {
           IDEA : 'IDEA',
           NOTES : 'NOTES',
