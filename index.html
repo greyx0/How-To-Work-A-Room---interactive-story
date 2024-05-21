@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sabbie e Stregoni</title>
+  <meta name="description" content="Sai sostenere la crisi magica su Athas? Entra nel mondo Dark Sun di D&D e gestisci la crisi della magia. Leggi, fai le tue scelte e inizia la tua avventura!">
+  <meta name="author" content="FEM - Future Education Modena">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+  <style>
+      body {
+        font-family: 'Special Elite', cursive;
+        background-color: #FDD974;
+        margin: 0;
+        padding: 0;
+        background-image: url('img/bg-desert.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .story-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f3de; /* Fallback color */
+        background-image: url('img/paper_texture.jpg'); /* Paper texture image URL */
+        background-size: cover; /* Scale the background image to cover the container */
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+        position: relative; /* Needed for stacking */
+        z-index: 1; /* Make sure content appears above the overlay */
+      }
+      .story-container img {
+        width: 100%; /* Make image responsive */
+        border-radius: 10px; /* Apply border-radius to image */
+      }
+      /* Special story container styles */
+      .special-story-container {
+        background-color: #FFE4B5; /* Light brown background */
+        color: #4A4A4A; /* Dark font color */
+      }
+      .story-text {
+        margin-top: 20px;
+        font-size: 17px;
+      }
+      .avatar-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .avatar-container img {
+        width: 100px; /* Adjust size of the avatar image */
+        height: 100px; /* Adjust size of the avatar image */
+        border-radius: 50%; /* Create circular mask */
+        border: 2px solid #fff; /* Add border around the avatar */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+      }
+      .choices {
+        margin-top: 20px;
+        text-align: center; /* Center align choice buttons */
+      }
+      .choice-button {
+        margin: 5px;
+        border-radius: 20px; /* Rounded corners */
+        padding: 10px 20px; /* Adjust padding */
+        background-color: #8B4513; /* Dark orange/brown color */
+        border: none; /* Remove border */
+      }
+      .choice-button:hover {
+        background-color: #A0522D; /* Darken the color on hover */
+      }
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+      }
+      strong, b {
+        background-color: #FFD700; /* Gold background color */
+        color: #4A4A4A; /* Dark font color */
+        padding: 2px 5px; /* Adjust padding */
+        border-radius: 3px; /* Rounded corners */
+      }
+      .header-center {
+          text-align: center;
+      }
+      .header-right {
+          text-align: right;
+      }
+  </style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D3NL6WN6FC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D3NL6WN6FC');
+</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="javascript/avataaars.js" defer></script>
+  <script src="projectData/HomerVars.js" defer></script>
+  <script src="classes/HomerParser.js" defer></script>
+  <script src="javascript/homer.js" defer></script>
+
+</head>
+<body>
+<!-- <header id="header">
+  <img src="https://homer.open-lab.com/assets/images/logo.png" width="180">
+  <h1>Project Name</h1>
+</header>
+-->
+<div class="overlay"></div> <!-- Semi-transparent overlay -->
+
+<div id="container" class="container story-container">
+  <div id="flow" style="display: none;">
+    <div id="flow-content">
+      <div id="cover">
+        <h1>Project Name</h1>
+        <h2 class="header-right">Sands & Sorcerers</h2>
+        <button class="btn btn-primary choice-button" onclick="homerDrawer.start()">INIZIAMO</button>
+      </div>
+      <div id="node-content" style="display: none;">
+  <!--      <span id="actor-avatar">Avatar</span> -->
+        <h3 id="actor-name" class="header-center">Actor Name</h3>
+        <div id="actor-avatar" class="avatar-container">
+          <img src="img/avatar_maga.jpg" alt="Speaker Avatar">
+        </div>
+        <div id="node-image"><img src="image.jpg" class="img-fluid" alt="Story Image"></div>
+        <p id="text" class="story-text">content</p>
+        <div id="choices" class="choices"></div>
+      </div>
+      <div id="the-end" style="display: none;"></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
