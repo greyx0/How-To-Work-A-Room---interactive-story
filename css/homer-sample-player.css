@@ -24,6 +24,12 @@ body header h1 {
   vertical-align: top;
   display: inline-block;
 }
+body header #locale {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
 body #structure {
   border-right: 1px solid #2a2c34;
   position: relative;
@@ -42,7 +48,7 @@ body #flow {
   position: relative;
   display: inline-block;
   height: calc(100% - 100px);
-  min-width: calc(100% - 350px);
+  min-width: 100vw;
 }
 body #project-buttons,
 body #properties {
@@ -57,7 +63,7 @@ body #project-content,
 body #flow-content,
 body #node-content {
   height: 100%;
-  width: calc(100% - 370px);
+  width: 100vw;
   padding: 10px;
   vertical-align: top;
   display: inline-block;
@@ -232,4 +238,4 @@ body key {
 body value {
   font-size: 80%;
 }
-/*# sourceMappingURL=homer.css.map */
+/*# sourceMappingURL=homer-sample-player.css.map */
