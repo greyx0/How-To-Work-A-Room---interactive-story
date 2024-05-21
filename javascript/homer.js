@@ -315,7 +315,7 @@ window.homerDrawer = {
 				window.avatar = '<img src="img/Matt_portrait-export.png" alt="Matt"></img>'
 			}
 			if (window.actor._uid == "MATT_S_MOM") {
-				window.avatar = '<img src="img/mother_portrait-export.png" alt="Matt's Mom"></img>'
+				window.avatar = '<img src="img/mother_portrait-export.png" alt="Matts Mom"></img>'
 			}
 			if (window.actor._uid == "KIMBERLY") {
 				window.avatar = '<img src="img/Kimberly_portrait-export.png" alt="Kimberly"></img>'
