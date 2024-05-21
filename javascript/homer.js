@@ -312,25 +312,25 @@ window.homerDrawer = {
 			//	window.avatar = window.Avataaars.create(actor._avatar._options);
 			//console.debug("window.actor._id = " + window.actor._uid);
 			if (window.actor._uid == "MATT") {
-				window.avatar = '<img src="img/Matt_portrait-export.png" alt="Maga Avatar"></img>'
+				window.avatar = '<img src="img/Matt_portrait-export.png" alt="Matt"></img>'
 			}
 			if (window.actor._uid == "MATT_S_MOM") {
-				window.avatar = '<img src="img/mother_portrait-export.png" alt="Consigliere Avatar"></img>'
+				window.avatar = '<img src="img/mother_portrait-export.png" alt="Matt's Mom"></img>'
 			}
 			if (window.actor._uid == "KIMBERLY") {
-				window.avatar = '<img src="img/Kimberly_portrait-export.png" alt="Cittadini Avatar"></img>'
+				window.avatar = '<img src="img/Kimberly_portrait-export.png" alt="Kimberly"></img>'
 			}
 			if (window.actor._uid == "RANDOM_GUY__1") {
-				window.avatar = '<img src="img/random_guy_1-export.png" alt="Cittadini Avatar"></img>'
+				window.avatar = '<img src="img/random_guy_1-export.png" alt="Random Guy #1"></img>'
 			}
 			if (window.actor._uid == "RANDOM_GUY__2") {
-				window.avatar = '<img src="img/random_guy_2-export.png" alt="Cittadini Avatar"></img>'
+				window.avatar = '<img src="img/random_guy_2-export.png" alt="Random Guy #2"></img>'
 			}
 			if (window.actor._uid == "RANDOM_GIRL__1") {
-				window.avatar = '<img src="img/random_girl_1-export.png" alt="Cittadini Avatar"></img>'
+				window.avatar = '<img src="img/random_girl_1-export.png" alt="Random Girl #1"></img>'
 			}
 			if (window.actor._uid == "RANDOM_GIRL__2") {
-				window.avatar = '<img src="img/random_girl_2-export.png" alt="Cittadini Avatar"></img>'
+				window.avatar = '<img src="img/random_girl_2-export.png" alt="Random Girl #2"></img>'
 			}
 			
 			switch (node._type) {	
