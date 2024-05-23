@@ -400,4 +400,14 @@ window.homerDrawer = {
 	}
 };
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/40FZD9ladH2d3vmXtoLLQo?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+$(window).on('load resize', function() {
+	$('iframe[src*="embed.spotify.com"]').each( function() {
+	  $(this).css('width', $(this).parent().css('width'));
+	  $(this).attr('src', $(this).attr('src'));
+	  $(this).removeClass('loaded');
+	  
+	  $(this).on('load', function(){
+		$(this).addClass('loaded');
+	  });
+	});
+  });
