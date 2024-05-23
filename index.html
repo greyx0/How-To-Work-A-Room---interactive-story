@@ -20,7 +20,7 @@
         background-attachment: fixed
       }
       .overlay {
-        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        background-color: rgba(0, 0, 0, 0.5); 
         position: fixed;
         top: 0;
         left: 0;
@@ -31,22 +31,21 @@
         max-width: 800px;
         margin: 20px auto;
         padding: 20px;
-        background-color: #ffffff; /* Fallback color */
-        background-image: url('img/paper_texture.jpg'); /* Paper texture image URL */
-        background-size: cover; /* Scale the background image to cover the container */
+        background-color: #ffffff; 
+        background-size: cover; 
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
-        position: relative; /* Needed for stacking */
-        z-index: 1; /* Make sure content appears above the overlay */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        position: relative; 
+        z-index: 1; 
       }
       .story-container img {
-        width: 100%; /* Make image responsive */
-        border-radius: 10px; /* Apply border-radius to image */
+        width: 100%; 
+        border-radius: 10px; 
       }
-      /* Special story container styles */
+      
       .special-story-container {
-        background-color: #ffffff; /* Light brown background */
-        color: #000000; /* Dark font color */
+        background-color: #ffffff; 
+        color: #000000; 
       }
       .story-text {
         margin-top: 20px;
@@ -57,27 +56,27 @@
         margin-bottom: 20px;
       }
       .avatar-container img {
-        width: 300px; /* Adjust size of the avatar image */
-        height: 300px; /* Adjust size of the avatar image */
-        border-radius: 50%; /* Create circular mask */
-        border: 2px solid #fff; /* Add border around the avatar */
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Optional: Add shadow */
+        width: 300px; 
+        height: 300px; 
+        border-radius: 50%; 
+        border: 2px solid #fff; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
       }
       .choices {
         margin-top: 20px;
-        text-align: center; /* Center align choice buttons */
+        text-align: center; /
       }
       .choice-button {
         margin: 5px;
-        border-radius: 20px; /* Rounded corners */
-        padding: 10px 20px; /* Adjust padding */
+        border-radius: 20px; 
+        padding: 10px 20px; 
         background-color: #5c63cc; 
-        border: none; /* Remove border */
+        border: none; 
       }
       .choice-button:hover {
-        background-color: #161980; /* Darken the color on hover */
+        background-color: #161980; 
       }
-      /* Footer styles */
+      
       footer {
         background-color: #333;
         color: #fff;
@@ -88,10 +87,10 @@
         width: 100%;
       }
       strong, b {
-        background-color: #ff99ff; /* Gold background color */
-        color: #000000; /* Dark font color */
-        padding: 2px 5px; /* Adjust padding */
-        border-radius: 3px; /* Rounded corners */
+        background-color: #ff99ff; 
+        color: #000000; 
+        padding: 2px 5px; 
+        border-radius: 3px;
       }
       .header-center {
           text-align: center;
@@ -120,12 +119,8 @@
 
 </head>
 <body>
-<!-- <header id="header">
-  <img src="https://homer.open-lab.com/assets/images/logo.png" width="180">
-  <h1>Project Name</h1>
-</header>
--->
-<div class="overlay"></div> <!-- Semi-transparent overlay -->
+
+<div class="overlay"></div>
 
 <div id="container" class="container story-container">
   <div id="flow" style="display: none;">
@@ -151,4 +146,5 @@
 </div>
 
 </body>
-</html>
+
+<html>
